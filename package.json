@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "build:watch": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.11.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "packageManager": "pnpm@11.11.0+sha512.4463f65fd80ed80d69bc1d4bf163ee94f605c7380fc318bb5b2ebe15f8cd12d49c51a4d59e951b401e764d3b6ca751cbf51bc50ed7001a6bcb4935e684c34882",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@tailwindcss/postcss": "^4.3.2",
+    "@tailwindcss/typography": "^0.5.20",
+    "daisyui": "^5.6.16",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^4.3.2"
+  },
+  "devDependencies": {
+    "@iconify-json/hugeicons": "^1.2.30",
+    "@iconify/tailwind4": "^1.2.3",
+    "@shopify/prettier-plugin-liquid": "^1.10.3",
+    "prettier": "^3.9.5"
+  }
+}

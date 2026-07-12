@@ -1,0 +1,161 @@
+---
+layout: layouts/base.liquid
+title: Rey Obejero
+---
+<div>
+  <div class='drawer drawer-start'>
+    <input id='nav-drawer' type='checkbox' class='drawer-toggle'>
+
+    <div class='drawer-content flex flex-col gap-10 min-h-screen'>
+      {% include './partials/header.liquid' %}
+
+      <main class='grow w-full max-w-2xl mx-auto px-6 pb-24 flex flex-col justify-start'>
+        <section class='mt-8 flex flex-col gap-4 mb-12'>
+          <div class='flex center justify-between items-center'>
+            <div class=' bg-base-200 rounded-full avatar'>
+              {% include './partials/avatar.liquid' %}
+            </div>
+
+            <div class='tooltip tooltip-start md:tooltip-right md:tooltip-center'>
+              <div class='tooltip-content'>
+                <div>Toggle theme</div>
+              </div>
+              <label class='swap swap-rotate opacity-40 hover:opacity-100 transition-opacity' aria-label='Toggle theme'>
+                <input type='checkbox' id='theme-swap' class='theme-controller' value='portfolio-dark'>
+                <svg
+                  class='swap-off h-5 w-5 fill-current'
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'
+                >
+                  <path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/>
+                </svg>
+                <svg
+                  class='swap-on h-5 w-5 fill-current'
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'
+                >
+                  <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/>
+                </svg>
+              </label>
+            </div>
+          </div>
+
+          <h1 class='font-lora text-4xl font-bold tracking-tight text-color-primary mb-3'>Rey Obejero</h1>
+
+          <p class='text-[17px] text-base-content/85 leading-relaxed tracking-tight max-w-[540px]'>
+            <!--
+              Interested in Computer Science. Focused on back-end systems and full-stack applications. Exploring AI
+              workflows and augmentations.
+            -->
+            Interested in Computer Science. Focused on back-end systems and full-stack applications. Exploring
+            AI-powered workflows and augmentations.
+          </p>
+        </section>
+
+        <section class='flex items-center gap-6 mb-16'>
+          <a
+            href='#'
+            target='_blank'
+            class='text-base-content opacity-50 hover:opacity-100 hover:scale-105 transition'
+            aria-label='LinkedIn'
+          >
+            <span class='icon-[hugeicons--linkedin-01] w-6 h-6'></span>
+          </a>
+
+          <a
+            href='#'
+            target='_blank'
+            class='text-base-content opacity-50 hover:opacity-100 hover:scale-105 transition'
+            aria-label='GitHub'
+          >
+            <span class='icon-[hugeicons--github-01] w-6 h-6'></span>
+          </a>
+
+          <a
+            href='#'
+            target='_blank'
+            class='text-base-content opacity-50 hover:opacity-100 hover:scale-105 transition'
+            aria-label='Source Code'
+          >
+            <span class='icon-[hugeicons--3rd-bracket-square] w-6 h-6'></span>
+          </a>
+        </section>
+
+        <section class='mb-12' hidden>
+          <div class='mb-5'>
+            <span class='text-[13px] font-medium tracking-wider text-base-content opacity-40'> Projects </span>
+          </div>
+          <div class='flex flex-col gap-3'>
+            <div class='group py-2 rounded-lg -mx-3 px-3 hover:bg-neutral/5 transition'>
+              {% comment %} <h3 class='text-base font-medium text-base-content'></h3> {% endcomment %}
+            </div>
+          </div>
+        </section>
+
+        <section class='mb-12' hidden>
+          <div class='mb-5'>
+            <span class='text-[13px] font-medium tracking-wider text-base-content opacity-40'>Thoughts</span>
+          </div>
+          <div class='flex flex-col gap-3'>
+            <div class='group py-2 rounded-lg -mx-3 px-3 hover:bg-neutral/5 transition'></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class='drawer-side z-50'>
+      <label for='nav-drawer' class='drawer-overlay'></label>
+      <div class='menu p-8 w-80 min-h-full bg-base-200 text-base-content border-r border-neutral flex flex-col justify-between'>
+        <div>
+          <div class='flex justify-between items-center mb-8'>
+            <div class='avatar'>
+              <div class='w-10 h-10 rounded-full'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 560 560'
+                  fill='none'
+                  shape-rendering='auto'
+                  aria-hidden='true'
+                  class='w-full h-full'
+                >
+                  <!-- Generated by DiceBear (https://dicebear.com) -->
+                    <metadata xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"><rdf:RDF><rdf:Description><dc:title>Notionists</dc:title><dc:creator>Zoish</dc:creator><dc:source xsi:type="dcterms:URI">https://heyzoish.gumroad.com/l/notionists</dc:source><dcterms:license xsi:type="dcterms:URI">https://creativecommons.org/publicdomain/zero/1.0/</dcterms:license><dc:rights>Remix of "Notionists" (https://heyzoish.gumroad.com/l/notionists) by "Zoish", licensed under "CC0 1.0" (https://creativecommons.org/publicdomain/zero/1.0/)</dc:rights></rdf:Description></rdf:RDF></metadata><defs><g id="mouth-variant13-987f072b"><path d="M153.6 86c7.4-.8 15.8 2 22.6-5.6-18-2.4-34.8-5.5-54.2.3 10.7 7.3 20 7.4 31.6 5.4" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M148.3 97.9q5.3-.4 10.5-.5l6.3-1.7q5.6-2 10.8-2.5c8.7-.7 15.7-3.7 15.9-13 .1-8.8-6.9-13-14.9-15-19-5-38-2.5-56.7 1.6-6.2 1.4-12 5.7-12.3 13.2s5 11 11 14.1c9.3 5 19.2 4.4 29.4 3.8m11.3-12-6 .2C142 88 132.7 88 122 80.7c17.9-5.4 33.6-3.2 50-.9l4.2.6c-5 5.6-11 5.6-16.6 5.5" fill="black"/></g><g id="nose-variant01-987f072b"><path d="M53.4 95.7c.2-5.7.5-10.4.3-15-.2-7.3 3-10.2 10.5-8.5 2.8 10.7 2 22 1.1 32.7-1.8 19.6 7.7 32 23 41.6 19.6 12.3 25.6 32.7 13.4 48.6-19.8 25.4-56.3 21.8-75-4.1-2.2-3.2-1.4-7.5 0-11.2.9-2.3 1.9-5 5-5 3.8-.2 5.2 2.2 5.6 5.5 1.8 12.3 10.8 16.9 21.2 18.8 13 2.4 24.5-.5 32.3-12.4 7-10.7 5-20.9-6-26.9-25.4-13.7-35.9-34.6-31.4-64" fill="black"/></g><g id="eyes-variant01-987f072b"><path d="M224.4 58.4c-4.2-9.5-9.9-15.2-19.8-15.7-6-.3-7-5.1-8.9-9.8 2-1.5 3.5-3.7 5.3-3.8q31.8-2.6 63.5-.1c6 .4 9.3 8 3.2 10.4-10 4-12.5 13.2-18.5 19.8-8.2 9-15.2 9.1-24.8-.8m-191-29.6c12.2.7 23.1 1 34 2 3.6.3 8 1.8 8 6.7 0 5.6-4.6 5.2-8.3 5.1-6.3 0-9.7 2.7-12.5 8.6-3.4 7.4-6.9 15.3-18 14.8-10.5-.5-15.1-7.2-18.1-15.2-2.2-5.7-5-8.4-11-8.9-5.8 1.2-12.1 2.2-15.7 5.6" fill="black"/></g></defs>
+                </svg>
+              </div>
+            </div>
+            <label for='nav-drawer' class='btn btn-sm btn-circle btn-ghost text-lg'>&times;</label>
+          </div>
+          <nav class='flex flex-col gap-4 text-lg font-medium'>
+            <a href='#' class='hover:text-primary transition-colors py-1'>Home</a>
+            <a href='#' class='hover:text-primary transition-colors py-1'>Projects</a>
+            <a href='#' class='hover:text-primary transition-colors py-1'>Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var checkbox = document.getElementById('theme-swap');
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+      checkbox.checked = saved === 'portfolio-dark' || (!saved && prefersDark);
+
+      checkbox.addEventListener('change', function () {
+        var theme = this.checked ? 'portfolio-dark' : 'portfolio-light';
+        localStorage.setItem('theme', theme);
+        document.documentElement.setAttribute('data-theme', theme);
+      });
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        if (!localStorage.getItem('theme')) {
+          var theme = e.matches ? 'portfolio-dark' : 'portfolio-light';
+          checkbox.checked = e.matches;
+          document.documentElement.setAttribute('data-theme', theme);
+        }
+      });
+    })();
+  </script>
+</div>

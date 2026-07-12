@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+@plugin "daisyui";
+@plugin "@iconify/tailwind4";
+
+@plugin "daisyui/theme" {
+  name: 'portfolio-light';
+  default: true;
+  prefersdark: false;
+  color-scheme: 'light';
+  --color-base-100: oklch(1 0 0);
+  --color-base-200: oklch(0.9755 0.0067 97.351);
+  --color-base-300: oklch(0.9459 0.0165 91.5544);
+  --color-base-content: oklch(0.2178 0 0);
+  --color-primary: oklch(0.7414 0.0738 84.5946);
+  --color-primary-content: oklch(1 0 0);
+  --color-secondary: oklch(0.9096 0.0167 91.5611);
+  --color-secondary-content: oklch(0.2178 0 0);
+  --color-neutral: oklch(0.8986 0.0258 97.1423);
+  --color-neutral-content: oklch(0.5022 0.0278 85.7741);
+  --color-accent: oklch(0.7414 0.0738 84.5946);
+  --color-accent-content: oklch(1 0 0);
+  --color-error: oklch(0.568 0.2002 26.4057);
+  --color-error-content: oklch(1 0 0);
+  --radius-box: 0.75rem;
+  --radius-field: 0.5rem;
+  --radius-selector: 0.75rem;
+}
+
+@plugin "daisyui/theme" {
+  name: 'portfolio-dark';
+  default: false;
+  prefersdark: true;
+  color-scheme: 'dark';
+  --color-base-100: oklch(0.2343 0.0038 106.6863);
+  --color-base-200: oklch(0.1904 0.004 106.7692);
+  --color-base-300: oklch(0.2596 0.0037 106.6523);
+  --color-base-content: oklch(0.9755 0.0067 97.351);
+  --color-primary: oklch(0.8039 0.0702 84.7579);
+  --color-primary-content: oklch(0.1904 0.004 106.7692);
+  --color-secondary: oklch(0.2901 0.0061 78.232);
+  --color-secondary-content: oklch(0.9755 0.0067 97.351);
+  --color-neutral: oklch(0.2901 0.0061 78.232);
+  --color-neutral-content: oklch(0.7006 0.0154 84.5911);
+  --color-accent: oklch(0.8039 0.0702 84.7579);
+  --color-accent-content: oklch(0.1904 0.004 106.7692);
+  --color-error: oklch(0.6368 0.2078 25.3313);
+  --color-error-content: oklch(0.9755 0.0067 97.351);
+  --radius-box: 0.75rem;
+  --radius-field: 0.5rem;
+  --radius-selector: 0.75rem;
+}
+
+@theme {
+  --font-lora: 'Lora', serif;
+  --font-inter: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  body {
+    font-family:
+      'Inter',
+      -apple-system,
+      BlinkMacSystemFont,
+      sans-serif;
+    letter-spacing: -0.02em;
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-neutral);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-neutral-content);
+  }
+}
+
+@layer utilities {
+  .menu-bar-icon {
+    width: 20px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .menu-bar-icon span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+  }
+}
